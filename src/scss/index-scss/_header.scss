@@ -1,7 +1,7 @@
-@import "variabels";
-@import "mixins";
-@import "function";
-@import "../../build/img/sprite";
+@import "../variabels";
+@import "../mixins";
+@import "../function";
+@import "../../../build/img/sprite";
 
 .hide-g{
   display: none;
@@ -466,7 +466,7 @@
   }
 }
 
-.order-now{
+ .order-now{
   a {
     @include font-roboto-regular(26, #fff);
     font-weight: normal;
@@ -605,7 +605,7 @@
     min-height: 650px;
     position: relative;
     padding: calculateRem(20px);
-    @media screen and (min-width: 581px) {
+    @media screen and (min-width: 762px) {
       &:hover {
         &:before {
           content: '';
@@ -822,6 +822,7 @@
     display: none;
   }
   p:last-child{
+    display: block;
     text-align: center;
     @include font-arial-narrow(16,#caddea);
     text-transform: full-size-kana;

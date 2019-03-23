@@ -1,14 +1,13 @@
 @import "_normalize";
 @import "_variabels";
-@import "_header";
+@import "index-scss/_header.scss";
 @import "_fonts";
-@import "burger";
+@import "index-scss/burger";
 @import "interaktive";
+@import "Blog-Post/blog";
 
-
-
-
-@import "media-1024";
-@import "media-320";
-@import "media-index";
-@import "main-normalize";
+@import "index-scss/media-1024";
+@import "index-scss/media-320";
+@import "index-scss/media-index";
+@import "index-scss/main-normalize";
+@import "Blog-Post/blog-media";

@@ -7,7 +7,8 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
 const spritesmith = require('gulp.spritesmith');
-
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
 const svgSprite = require('gulp-svg-sprite'),
     svgmin = require('gulp-svgmin'),
     cheerio = require('gulp-cheerio'),
@@ -21,6 +22,7 @@ const jsFiles = [
     'src/js/bootstrap.bundle.js',
     'src/js/bootstrap.js'
 ];
+
 
 function styles() {
   return  gulp.src('src/scss/Style.css')
@@ -72,9 +74,10 @@ function watch(){
         }
     });
 
-    gulp.watch('src/scss/Style.css', styles);
+   gulp.watch('src/scss/Style.css', browserSync.reload);
+   gulp.watch('src/scss/Style.css', styles);
     gulp.watch('src/js/**/*.js', scripts);
-    gulp.watch('src/images/*', Sprites);
+    //gulp.watch('src/images/*', Sprites);
     gulp.watch('*.html',browserSync.reload);
 }
 

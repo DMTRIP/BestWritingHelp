@@ -35,7 +35,7 @@ $('.md-select ul li').on('click', function() {
 var addHover = document.querySelectorAll('.about-item-in-wrapper article');
 
 // easy writing block
-if(window.matchMedia('(min-width:581px)').matches) {
+if(window.matchMedia('(min-width:762px)').matches) {
 
 
    var onHover = document.querySelectorAll('.about-item-icon div');
