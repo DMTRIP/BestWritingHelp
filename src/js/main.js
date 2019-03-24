@@ -33,12 +33,12 @@ $('.md-select ul li').on('click', function() {
 });
 
 var addHover = document.querySelectorAll('.about-item-in-wrapper article');
+var onHover = document.querySelectorAll('.about-item-icon div');
 
 // easy writing block
 if(window.matchMedia('(min-width:762px)').matches) {
 
 
-   var onHover = document.querySelectorAll('.about-item-icon div');
 
    onHover[0].addEventListener('pointerover', event = function () {
       addHover[0].classList.add('about-item-event');

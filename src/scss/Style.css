@@ -1537,7 +1537,8 @@ a:hover {
     background: #1b7fd0;
     padding: 0.625rem 0;
     text-align: center;
-    position: relative; }
+    position: relative;
+    margin-top: 0; }
     .content-meta .blue-triangle-line:before {
       content: '';
       display: block;
@@ -1781,6 +1782,273 @@ a:hover {
     padding: 0.625rem 0;
     width: 15%;
     align-self: flex-end; }
+
+.post-preview {
+  margin-bottom: 2.5rem; }
+
+main {
+  background: url("/build/svg/Bg1.svg") no-repeat;
+  background-position: bottom; }
+
+.blog-row {
+  margin-bottom: 3.125rem; }
+
+.gray-line {
+  font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+  font-size: 1.75rem;
+  color: #1b7fd0;
+  text-transform: uppercase;
+  background: #caddea;
+  text-align: center;
+  box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75);
+  padding: 0.9375rem 0;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 2.1875rem;
+  width: 100%; }
+  .gray-line:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: transparent;
+    left: 10px;
+    bottom: -12px;
+    box-shadow: 4px 4px 7px #9bb6be;
+    width: 3px;
+    height: 17px;
+    transform: rotate(50deg); }
+  .gray-line:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 19px 0 0;
+    border-color: #caddea transparent transparent transparent; }
+
+.content-meta {
+  margin-bottom: 2.5rem; }
+
+.posts-bg {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75); }
+  .posts-bg .post-item {
+    display: flex;
+    align-items: center; }
+    .posts-bg .post-item img {
+      width: 110%;
+      height: auto;
+      margin-left: -3rem;
+      min-width: 220px;
+      min-height: 170px; }
+    .posts-bg .post-item h3 {
+      font-family: 'Roboto Medium', Helvetica, Arial, sans-serif;
+      font-size: 1.375rem;
+      color: #1b7fd0;
+      margin-top: 0;
+      text-transform: uppercase; }
+    .posts-bg .post-item p {
+      font-family: 'Arial Narrow Regular', Helvetica, Arial, sans-serif;
+      font-size: 1.125rem;
+      color: #000;
+      font-weight: normal; }
+    .posts-bg .post-item hr {
+      background: #1b7fd0;
+      height: 2px; }
+    .posts-bg .post-item .post-item-content {
+      margin-left: 1rem; }
+    .posts-bg .post-item .post-item-footer {
+      display: flex;
+      justify-content: space-between; }
+      .posts-bg .post-item .post-item-footer a {
+        font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        color: #1b7fd0;
+        text-transform: uppercase;
+        text-decoration: none; }
+      .posts-bg .post-item .post-item-footer .post-tags span {
+        font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: #075da2;
+        text-transform: uppercase;
+        background: #caddea;
+        padding: 0.3125rem 0.5rem; }
+    .posts-bg .post-item .post-data {
+      font-family: 'Roboto Medium', Helvetica, Arial, sans-serif;
+      font-size: 1.375rem;
+      color: #a6cae3;
+      text-transform: uppercase;
+      writing-mode: sideways-lr; }
+  .posts-bg .post-preview-bg {
+    padding: 0; }
+
+.post-item-revers {
+  flex-direction: row-reverse; }
+  .post-item-revers img {
+    margin-right: -3rem; }
+  .post-item-revers .post-item-content {
+    margin-right: 5rem; }
+
+.posts-bg .post-item:first-child img {
+  margin-top: -2rem; }
+.posts-bg .post-item:last-child img {
+  margin-bottom: -2rem; }
+
+.paginations {
+  display: flex;
+  justify-content: space-between; }
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-radius: 5px 0 0 5px; }
+.page-item:last-child .page-link {
+  border-radius: 0 5px 5px 0; }
+.page-item.active .page-link {
+  z-index: 2;
+  background-color: #1b7fd0;
+  color: #fff;
+  pointer-events: none;
+  cursor: default; }
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin-left: -1px;
+  line-height: 35px;
+  width: 35px;
+  text-align: center;
+  color: #1b7fd0;
+  background-color: #fff;
+  border: .75px solid #d2d2d2; }
+
+.disabled .page-link,
+.page-link.disabled {
+  color: #1b7fd0;
+  pointer-events: none;
+  background-color: #f8f8f8;
+  cursor: default; }
+
+.pager {
+  display: table;
+  list-style: none;
+  padding: 0;
+  font-size: 12px; }
+
+.pager .page-link {
+  display: block;
+  width: auto;
+  white-space: nowrap;
+  padding: 0 10px;
+  float: left; }
+  .pager .page-link:first-child {
+    border-radius: 5px 0 0 5px; }
+  .pager .page-link:last-child {
+    border-radius: 0 5px 5px 0; }
+
+.pager span,
+.pager .material-icons {
+  display: block;
+  float: left; }
+
+.paginations .material-icons,
+.pager .material-icons {
+  font-size: 16px;
+  line-height: inherit; }
+
+body {
+  background: #f4f6fa; }
+
+.contact-inf {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  background: #fff;
+  padding: 1.875rem;
+  padding-top: 0; }
+  .contact-inf > label {
+    font-family: 'Roboto Medium', Helvetica, Arial, sans-serif;
+    font-size: 0.9375rem;
+    color: #013056; }
+    .contact-inf > label span {
+      color: #f83e3f; }
+  .contact-inf > input {
+    background: #e9f7fe;
+    border: none;
+    min-height: 35px;
+    margin-bottom: 1.25rem; }
+  .contact-inf span label {
+    font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #013056; }
+
+.select {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 325px;
+  color: #cccccc;
+  vertical-align: middle;
+  text-align: left;
+  user-select: none;
+  -webkit-touch-callout: none; }
+  .select .placeholder {
+    position: relative;
+    display: block;
+    background-color: #393d41;
+    z-index: 1;
+    padding: 0.4em;
+    height: 30px;
+    border-radius: 2px;
+    cursor: pointer; }
+    .select .placeholder:hover {
+      background: #34383c; }
+    .select .placeholder:after {
+      position: absolute;
+      right: 1em;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Font Awesome 5 Pro';
+      content: '\f078';
+      z-index: 10; }
+  .select.is-open .placeholder:after {
+    content: '\f077'; }
+  .select.is-open ul {
+    display: block; }
+  .select.select--white .placeholder {
+    background: #fff;
+    color: #999; }
+    .select.select--white .placeholder:hover {
+      background: #fafafa; }
+  .select ul {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    z-index: 100;
+    max-height: 120px; }
+    .select ul li {
+      display: block;
+      text-align: left;
+      padding: 0.8em 1em 0.8em 1em;
+      color: #999;
+      cursor: pointer; }
+      .select ul li:hover {
+        background: #4ebbf0;
+        color: #fff; }
 
 /* This stylesheet generated by Transfonter (https://transfonter.org) on February 25, 2018 4:00 PM */
 @font-face {
@@ -2162,5 +2430,53 @@ a:hover {
   .comment-submit {
     width: 40% !important;
     align-self: center !important; } }
+@media screen and (max-width: 1024px) {
+  .post-item {
+    margin-bottom: 1.25rem; } }
+@media screen and (max-width: 500px) {
+  .gray-line {
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem; }
+
+  .last-posts {
+    padding: 0.9375rem; }
+    .last-posts h3 {
+      margin: 0;
+      margin-bottom: 0.3125rem; }
+
+  .posts-bg {
+    background: #f4f6fa !important;
+    box-shadow: none !important; }
+
+  body {
+    background: #f4f6fa; }
+
+  .blog-row {
+    margin: 0; } }
+@media screen and (max-width: 768px) {
+  .dn-blog-mb {
+    display: none; }
+
+  .db-blog-mb {
+    display: block; }
+
+  .post-item {
+    flex-direction: column; }
+    .post-item img {
+      width: 100% !important;
+      max-width: 400px;
+      max-height: 300px;
+      margin: 0 !important; }
+    .post-item .post-item-content h3 {
+      margin-top: 0.9375rem; }
+    .post-item .post-item-content .post-data {
+      writing-mode: horizontal-tb;
+      text-align: right; }
+
+  .post-item-revers .post-item-content {
+    margin: 0; }
+
+  .posts-bg {
+    width: 100%; } }
 
 /*# sourceMappingURL=Style.css.map */

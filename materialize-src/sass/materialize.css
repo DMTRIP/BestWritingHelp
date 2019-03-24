@@ -2085,38 +2085,38 @@ video.responsive-video {
   max-width: 100%;
   height: auto; }
 
-.pagination li {
+.pagination1 li {
   display: inline-block;
   border-radius: 2px;
   text-align: center;
   vertical-align: top;
   height: 30px; }
-  .pagination li a {
+  .pagination1 li a {
     color: #444;
     display: inline-block;
     font-size: 1.2rem;
     padding: 0 10px;
     line-height: 30px; }
-  .pagination li.active a {
+  .pagination1 li.active a {
     color: #fff; }
-  .pagination li.active {
+  .pagination1 li.active {
     background-color: #ee6e73; }
-  .pagination li.disabled a {
+  .pagination1 li.disabled a {
     cursor: default;
     color: #999; }
-  .pagination li i {
+  .pagination1 li i {
     font-size: 2rem; }
-.pagination li.pages ul li {
+.pagination1 li.pages ul li {
   display: inline-block;
   float: none; }
 
 @media only screen and (max-width: 992px) {
-  .pagination {
+  .pagination1 {
     width: 100%; }
-    .pagination li.prev,
-    .pagination li.next {
+    .pagination1 li.prev,
+    .pagination1 li.next {
       width: 10%; }
-    .pagination li.pages {
+    .pagination1 li.pages {
       width: 80%;
       overflow: hidden;
       white-space: nowrap; } }

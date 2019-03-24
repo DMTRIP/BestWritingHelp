@@ -163,7 +163,7 @@ video.responsive-video {
 
 // Pagination
 
-.pagination {
+.pagination1 {
 
   li {
     display: inline-block;
@@ -201,7 +201,7 @@ video.responsive-video {
   }
 }
 @media #{$medium-and-down} {
-  .pagination {
+  .pagination1 {
     width: 100%;
 
     li.prev,

@@ -231,6 +231,7 @@ a{
     padding: calculateRem(10px) 0;
     text-align: center;
     position: relative;
+    margin-top: 0;
 
     &:before {
       content: '';
