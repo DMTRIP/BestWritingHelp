@@ -78,7 +78,7 @@ function watch(){
    gulp.watch('src/scss/Style.css', styles);
     gulp.watch('src/js/**/*.js', scripts);
     //gulp.watch('src/images/*', Sprites);
-    gulp.watch('*.html',browserSync.reload);
+    gulp.watch('/*.html', browserSync.reload);
 }
 
 

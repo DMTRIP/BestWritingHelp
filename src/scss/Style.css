@@ -1968,23 +1968,30 @@ body {
   margin: 0 auto;
   width: 80%;
   background: #fff;
-  padding: 1.875rem;
-  padding-top: 0; }
-  .contact-inf > label {
-    font-family: 'Roboto Medium', Helvetica, Arial, sans-serif;
-    font-size: 0.9375rem;
-    color: #013056; }
-    .contact-inf > label span {
-      color: #f83e3f; }
-  .contact-inf > input {
-    background: #e9f7fe;
-    border: none;
-    min-height: 35px;
-    margin-bottom: 1.25rem; }
-  .contact-inf span label {
-    font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
-    font-size: 0.875rem;
-    color: #013056; }
+  margin-bottom: 2.1875rem; }
+  .contact-inf .form-wrapper {
+    padding: 1.875rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75); }
+    .contact-inf .form-wrapper > label {
+      font-family: 'Roboto Medium', Helvetica, Arial, sans-serif;
+      font-size: 0.9375rem;
+      color: #013056; }
+      .contact-inf .form-wrapper > label span {
+        color: #f83e3f; }
+    .contact-inf .form-wrapper > label[for="country"] {
+      margin-bottom: 2rem; }
+    .contact-inf .form-wrapper > input {
+      background: #e9f7fe;
+      border: none;
+      min-height: 35px;
+      margin-bottom: 1.25rem; }
+    .contact-inf .form-wrapper span label {
+      font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+      font-size: 0.875rem;
+      color: #013056; }
 
 .select {
   position: relative;
@@ -2049,6 +2056,536 @@ body {
       .select ul li:hover {
         background: #4ebbf0;
         color: #fff; }
+
+.form-select {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background: #ffffff;
+  overflow: hidden;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.07);
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s; }
+
+.form-select:focus, .form-select:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
+
+.form-select:after {
+  content: '▾';
+  position: absolute;
+  top: 0;
+  right: 12px;
+  z-index: 1;
+  color: #bbbbbb;
+  line-height: 40px;
+  font-size: 14px; }
+
+.ie .form-select:after {
+  display: none; }
+
+select {
+  position: relative;
+  background: transparent;
+  background-image: none;
+  display: block;
+  width: 100%;
+  outline: none;
+  color: #888888;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  padding: 10px 10px 10px 5px;
+  text-overflow: '';
+  text-indent: 5px;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
+select[multiple=multiple] {
+  height: auto;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.07);
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s; }
+
+select[multiple=multiple]:hover {
+  border-color: #cccccc;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
+
+select option[disabled] {
+  color: #eeeeee;
+  text-shadow: none;
+  border: none; }
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #888888; }
+
+select::-ms-expand {
+  display: none; }
+
+/*==========  Generic styling  ==========*/
+.column-6 {
+  position: sticky;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -150px;
+  width: 100%; }
+
+.form-select {
+  border: none; }
+  .form-select select {
+    background: url("/build/img/Down-Arrow-PNG-File.png") #e9f7fe;
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+    background-position: 98% center;
+    font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+    font-size: 0.9375rem;
+    color: #013056; }
+
+.blue-form-line {
+  font-family: 'Roboto Medium', Helvetica, Arial, sans-serif;
+  font-size: 1.375rem;
+  color: #fff;
+  padding: 0.9375rem 0;
+  background: #1b7fd0;
+  text-align: center;
+  margin-top: 0;
+  text-transform: uppercase; }
+
+.order-details {
+  margin: 0 auto;
+  width: 80%;
+  background: #fff;
+  box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75);
+  margin-bottom: 2.5rem; }
+
+label {
+  display: block;
+  margin: 1em 1em .25em .75em;
+  font-size: 1.25em;
+  color: #333; }
+
+/* Container used for styling the custom select, the buttom class adds the bg gradient, corners, etc. */
+.dropdown {
+  position: relative;
+  display: block;
+  margin-top: 0.5em;
+  padding: 0; }
+
+/* This is the native select, we're making everything the text invisible so we can see the button styles in the wrapper */
+.dropdown select {
+  width: 100%;
+  margin: 0;
+  background: none;
+  border: 1px solid transparent;
+  outline: none;
+  /* Prefixed box-sizing rules necessary for older browsers */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Remove select styling */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Magic font size number to prevent iOS text zoom */
+  font-size: 1.25em;
+  /* General select styles: change as needed */
+  /* font-weight: bold; */
+  color: #444;
+  padding: .6em 1.9em .5em .8em;
+  line-height: 1.3; }
+
+.dropdown select,
+label {
+  font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande","Trebuchet Ms", sans-serif; }
+
+/* Custom arrow sits on top of the select - could be an image, SVG, icon font, etc. or the arrow could just baked into the bg image on the select */
+.dropdown::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  right: 1em;
+  margin-top: -4px;
+  z-index: 2;
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpolygon fill='rgb(102,102,102)' points='8,12 0,0 16,0'/%3E%3C/svg%3E") 0 0 no-repeat;
+  /* These hacks make the select behind the arrow clickable in some browsers */
+  pointer-events: none; }
+
+/* This hides native dropdown button arrow in IE 10/11+ so it will have the custom appearance, IE 9 and earlier get a native select */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .dropdown select::-ms-expand {
+    display: none; }
+
+  /* Removes the odd blue bg color behind the text in IE 10/11 and sets the text to match the focus style text */
+  select:focus::-ms-value {
+    background: transparent;
+    color: #222; } }
+/* Firefox >= 2 -- Older versions of FF (v2 - 6) won't let us hide the native select arrow, so we'll just hide the custom icon and go with native styling */
+/* Show only the native arrow */
+body:last-child .dropdown::after, x:-moz-any-link {
+  display: none; }
+
+/* reduce padding */
+body:last-child .dropdown select, x:-moz-any-link {
+  padding-right: .8em; }
+
+/* Firefox 7+ -- Will let us hide the arrow, but inconsistently (see FF 30 comment below). We've found the simplest way to hide the native styling in FF is to make the select bigger than its container. */
+/* The specific FF selector used below successfully overrides the previous rule that turns off the custom icon; other FF hacky selectors we tried, like `*>.dropdown::after`, did not undo the previous rule */
+/* Set overflow:hidden on the wrapper to clip the native select's arrow, this clips hte outline too so focus styles are less than ideal in FF */
+_::-moz-progress-bar, body:last-child .dropdown {
+  overflow: hidden; }
+
+/* Show only the custom icon */
+_::-moz-progress-bar, body:last-child .dropdown:after {
+  display: block; }
+
+_::-moz-progress-bar, body:last-child .dropdown select {
+  /* increase padding to make room for menu icon */
+  padding-right: 1.9em;
+  /* `window` appearance with these text-indent and text-overflow values will hide the arrow FF up to v30 */
+  -moz-appearance: window;
+  text-indent: 0.01px;
+  text-overflow: "";
+  /* for FF 30+ on Windows 8, we need to make the select a bit longer to hide the native arrow */
+  width: 110%; }
+
+/* At first we tried the following rule to hide the native select arrow in Firefox 30+ in Windows 8, but we'd rather simplify the CSS and widen the select for all versions of FF since this is a recurring issue in that browser */
+/* @supports (-moz-appearance:meterbar) and (background-blend-mode:difference,normal) {
+.dropdown select { width:110%; }
+}   */
+/* Firefox 7+ focus style - This works around the issue that -moz-appearance: window kills the normal select focus. Using semi-opaque because outline doesn't handle rounded corners */
+_::-moz-progress-bar, body:last-child .dropdown select:focus {
+  outline: 2px solid rgba(180, 222, 250, 0.7); }
+
+/* Opera - Pre-Blink nix the custom arrow, go with a native select button */
+x:-o-prefocus, .dropdown::after {
+  display: none; }
+
+/* Hover style */
+.dropdown:hover {
+  border: 1px solid #888; }
+
+/* Focus style */
+select:focus {
+  outline: none;
+  box-shadow: 0 0 1px 3px #b4defa;
+  background-color: transparent;
+  color: #222;
+  border: 1px solid #aaa; }
+
+/* Firefox focus has odd artifacts around the text, this kills that */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000; }
+
+option {
+  font-weight: normal; }
+
+/* These are just demo button-y styles, style as you like */
+.button {
+  border: 1px solid #bbb;
+  border-radius: .3em;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  background: #f3f3f3;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e5e5e5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  /* W3C */ }
+
+.output {
+  margin: 0 auto;
+  padding: 1em; }
+
+.colors {
+  padding: 2em;
+  color: #fff;
+  display: none; }
+
+.red {
+  background: #c04; }
+
+.yellow {
+  color: #000;
+  background: #f5e000; }
+
+.blue {
+  background: #079; }
+
+a {
+  color: #c04;
+  text-decoration: none; }
+
+a:hover {
+  color: #903;
+  text-decoration: underline; }
+
+.form-wrapper {
+  padding: 1.875rem; }
+  .form-wrapper input[type="text"] {
+    background: #e9f7fe;
+    border: none;
+    min-height: 35px;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    margin-bottom: 0; }
+  .form-wrapper label {
+    font-family: 'Roboto Medium', Helvetica, Arial, sans-serif;
+    font-size: 0.9375rem;
+    color: #013056;
+    margin-left: 0; }
+    .form-wrapper label span {
+      color: #f83e3f; }
+  .form-wrapper .type-of-work {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3125rem;
+    align-items: flex-end; }
+    .form-wrapper .type-of-work p {
+      width: 87%;
+      font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #013056;
+      background: #caddea;
+      margin: 0;
+      padding: 0.3125rem 0.625rem; }
+    .form-wrapper .type-of-work + div {
+      margin: 0; }
+  .form-wrapper .button {
+    background: #e9f7fe;
+    border: none;
+    box-shadow: none;
+    border-radius: 0; }
+    .form-wrapper .button:hover {
+      border: none; }
+    .form-wrapper .button:active {
+      border: none; }
+    .form-wrapper .button select {
+      font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+      font-size: 0.9375rem;
+      color: #013056; }
+  .form-wrapper textarea {
+    width: 100%;
+    background: #e9f7fe;
+    outline: none;
+    border: none; }
+  .form-wrapper .check-write {
+    display: flex;
+    flex-direction: column; }
+    .form-wrapper .check-write .check-write-row {
+      display: flex;
+      font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+      font-size: 0.9375rem;
+      color: #013056;
+      margin-bottom: 1.25rem; }
+      .form-wrapper .check-write .check-write-row label {
+        display: flex;
+        flex-direction: row-reverse; }
+        .form-wrapper .check-write .check-write-row label input {
+          margin-right: 0.625rem; }
+    .form-wrapper .check-write > span {
+      display: flex;
+      flex-direction: column; }
+      .form-wrapper .check-write > span > span {
+        display: flex;
+        margin-bottom: 0.625rem; }
+        .form-wrapper .check-write > span > span label {
+          margin: 0;
+          margin-left: 0.3125rem; }
+          .form-wrapper .check-write > span > span label span {
+            font-weight: bold;
+            color: #013056; }
+  .form-wrapper .check-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.9375rem; }
+    .form-wrapper .check-footer label {
+      width: 47.5%;
+      margin: 0; }
+  .form-wrapper .form-button {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.875rem; }
+    .form-wrapper .form-button button {
+      width: 25%;
+      font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+      font-size: 1.25rem;
+      color: #fff;
+      padding: 0.625rem 0;
+      background: #1b7fd0;
+      border: none;
+      position: relative; }
+      .form-wrapper .form-button button:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: transparent;
+        left: 10px;
+        bottom: -12px;
+        box-shadow: 4px 4px 7px #9bb6be;
+        width: 3px;
+        height: 17px;
+        transform: rotate(50deg); }
+      .form-wrapper .form-button button:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -16px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 19px 0 0;
+        border-color: #1b7fd0 transparent transparent transparent; }
+      .form-wrapper .form-button button:last-child {
+        text-transform: uppercase; }
+  .form-wrapper p {
+    display: flex;
+    color: #dd0000; }
+    .form-wrapper p i {
+      width: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.875rem; }
+  .form-wrapper .accept {
+    text-align: center; }
+
+.vip-offer-row {
+  margin-bottom: 3.75rem; }
+  .vip-offer-row .vip-offer-wrapper {
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+  .vip-offer-row .vip-offer {
+    background: #1b7fd0;
+    padding: 1.25rem 1.5625rem 1.5625rem 1.5625rem;
+    width: 100%; }
+    .vip-offer-row .vip-offer h3 {
+      font-family: 'Roboto Medium', Helvetica, Arial, sans-serif;
+      font-size: 1.375rem;
+      color: #fdf9f1;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 1.25rem 0;
+      margin-top: 0; }
+    .vip-offer-row .vip-offer .vip-offer-main {
+      background: #fff;
+      display: flex;
+      padding: 1.875rem; }
+    .vip-offer-row .vip-offer .vip-item {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .vip-offer-row .vip-offer .vip-item p {
+        font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        color: #013056; }
+      .vip-offer-row .vip-offer .vip-item p:first-child {
+        font-family: 'Roboto Medium', Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        color: #013056; }
+      .vip-offer-row .vip-offer .vip-item span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: url("/build/svg/question-mark.svg") no-repeat #caddea;
+        background-position: center; }
+      .vip-offer-row .vip-offer .vip-item a {
+        font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        color: #ffffff;
+        background: #1b7fd0;
+        padding: 0.3125rem 0.9375rem;
+        border-radius: 10px;
+        max-height: 35px;
+        text-align: center; }
+    .vip-offer-row .vip-offer .vip-item-img {
+      background: url("/build/svg/VIP.svg") no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      width: 30%;
+      min-height: 120px;
+      background-position: center; }
+    .vip-offer-row .vip-offer .vip-item-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%; }
+  .vip-offer-row .vip-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75);
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem; }
+    .vip-offer-row .vip-footer p {
+      margin: 0;
+      font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+      font-size: 1.375rem;
+      color: #013056; }
+      .vip-offer-row .vip-footer p span {
+        font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+        font-size: 3.125rem;
+        color: #1b7fd0; }
+        .vip-offer-row .vip-footer p span:last-child {
+          font-size: 1.875rem;
+          margin-left: 0.9375rem; }
+    .vip-offer-row .vip-footer .button {
+      width: 16%;
+      border: none;
+      background: #e9f7fe; }
+    .vip-offer-row .vip-footer #colorselector {
+      width: 100%; }
+    .vip-offer-row .vip-footer a {
+      background: #dd0000;
+      font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+      font-size: 1.625rem;
+      color: #fff;
+      text-align: center;
+      width: 33%;
+      position: relative; }
+      .vip-offer-row .vip-footer a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: transparent;
+        left: 10px;
+        bottom: -12px;
+        box-shadow: 4px 4px 7px #9bb6be;
+        width: 3px;
+        height: 17px;
+        transform: rotate(50deg); }
+      .vip-offer-row .vip-footer a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -16px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 19px 0 0;
+        border-color: #dd0000 transparent transparent transparent; }
 
 /* This stylesheet generated by Transfonter (https://transfonter.org) on February 25, 2018 4:00 PM */
 @font-face {
@@ -2478,5 +3015,61 @@ body {
 
   .posts-bg {
     width: 100%; } }
+@media screen and (max-width: 990px) {
+  .vip-offer-main {
+    flex-direction: column; }
+
+  .vip-item-img {
+    align-self: center;
+    margin-bottom: 1.25rem;
+    width: 100% !important; }
+
+  .vip-item {
+    flex-direction: column;
+    border-bottom: 2px solid royalblue;
+    margin-bottom: 1.25rem; }
+    .vip-item p {
+      text-align: center;
+      align-self: center; }
+    .vip-item span {
+      align-self: center;
+      margin-bottom: 0.9375rem; }
+    .vip-item a {
+      margin-bottom: 1.25rem; }
+    .vip-item:last-child {
+      border: none; } }
+@media screen and (max-width: 768px) {
+  .vip-footer {
+    flex-direction: column; }
+    .vip-footer .button {
+      width: 60% !important; }
+    .vip-footer a {
+      width: 90% !important; } }
+@media screen and (max-width: 330px) {
+  .vip-footer p {
+    text-align: center;
+    margin-top: 0.625rem !important; } }
+@media screen and (max-width: 500px) {
+  .check-write-row {
+    flex-direction: column; }
+
+  .form-wrapper .check-write .check-write-row label {
+    display: flex;
+    align-self: flex-start; }
+
+  .check-footer {
+    flex-direction: column; }
+    .check-footer label {
+      width: 100% !important;
+      margin-bottom: 1.25rem !important; }
+
+  .form-button {
+    flex-direction: column; }
+    .form-button button {
+      width: 100% !important;
+      margin-bottom: 2.5rem !important; }
+
+  .check-write > p {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=Style.css.map */
