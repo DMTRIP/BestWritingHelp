@@ -28,4 +28,37 @@
       }
     }
   }
+
+  .massage-completed{
+    display: flex;
+    justify-content: space-around;
+    div:first-child{
+      margin: 0 !important;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 998px){
+  .massage-completed{
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .massage-button{
+      width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 372px){
+  .massage-button{
+    span{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      a{
+        margin-bottom: calculateRem(10px);
+      }
+    }
+  }
 }

@@ -52,11 +52,14 @@ body{
 .user-info{
   display: flex;
   justify-content: space-between;
-  padding-left: calculateRem(15px);
   border-bottom: 2px solid #1b7fd0;
   margin-bottom: calculateRem(20px);
+  width: 100%;
   p{
     @include font-arial-narrow(20,#013056);
+    &:first-child{
+      padding-left: calculateRem(23px);
+    }
     span{
       &:first-child{
         font-weight: bold;
@@ -180,7 +183,8 @@ body{
     width: 100%;
     p{
       @include font-arial-narrow(20,#013056);
-      margin: calculateRem(27px) calculateRem(0px) calculateRem(27px) calculateRem(15px);
+      margin: 0;
+      margin-left: calculateRem(15px);
     }
   }
 
@@ -188,4 +192,84 @@ body{
 
 .preview{
   margin-bottom: calculateRem(35px);
+}
+
+.no-found-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a{
+    @include font-roboto-bold(20,#fff);
+    background: #1b7fd0;
+    padding: calculateRem(11px) calculateRem(20px);
+    margin-top: calculateRem(13px);
+    margin-bottom: 15px;
+    margin-right: calculateRem(30px);
+  }
+}
+
+.massage-completed-row{
+
+  .blue-form-line{
+    width: 100%;
+    text-align: left;
+    padding-left: .9375rem;
+    margin-bottom: 2px;
+  }
+  .massage-completed{
+    display: flex;
+    background: #fff;
+    border:1px solid #ccc;
+    margin-bottom: 2px;
+    width: 100%;
+    &:last-child{
+      margin-bottom: calculateRem(77px);
+    }
+    div{
+      padding: calculateRem(10px) 0;
+      @include font-arial-narrow(20,#013056);
+
+      &:first-child{
+        p{
+          font-weight: bold;
+        }
+
+        margin-left: calculateRem(200px);
+        margin-right: calculateRem(133px);
+      }
+      .massage-tets{
+        display: flex;
+        align-items: center;
+        &:before{
+          content: '';
+          display: inline-block;
+          width: 30px;
+          height: 20px;
+          background: url("/build/svg/message.svg") no-repeat;
+          background-position: center;
+          margin-right: calculateRem(10px);
+        }
+      }
+    }
+
+    .massage-button{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 54%;
+      margin-bottom: calculateRem(10px);
+      span{
+        a{
+          @include font-roboto-bold(20,#fff);
+          background: #1b7fd0;
+          padding: calculateRem(13px) calculateRem(11px);
+          margin-right: calculateRem(15px);
+          &:first-child{
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
 }
