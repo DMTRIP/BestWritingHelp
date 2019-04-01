@@ -275,6 +275,7 @@ a{
     background: #fff;
     position: relative;
     box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75);
+
     h3{
       @include font-roboto-medium(22,#1b7fd0);
       text-transform: uppercase;
@@ -533,3 +534,21 @@ div{
   }
 
   }
+
+.content-meta{
+  > h3{
+    color: aliceblue;
+
+  }
+}
+
+.last-posts-1{
+  padding-top: calculateRem(20px);
+  margin-top: calculateRem(30px);
+  padding-bottom: 1px;
+
+}
+
+.paginations{
+  margin-top: calculateRem(20px);
+}

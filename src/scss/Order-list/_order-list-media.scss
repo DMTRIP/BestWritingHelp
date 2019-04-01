@@ -187,3 +187,14 @@
   }
 }
 }
+
+@media screen and (max-width: 450px){
+    .post-preview{
+      .rectangles{
+        flex-direction: column;
+        > a{
+          width: 100% ;
+        }
+      }
+    }
+}

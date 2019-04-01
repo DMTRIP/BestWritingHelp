@@ -40,7 +40,7 @@
     p{
       @include font-arial-narrow(20,#013056);
       font-weight: bold;
-      min-height: 70px;
+      //min-height: 70px;
         > span{
           display: none;
         }
@@ -299,3 +299,15 @@
 
   }
 }
+
+.msg-img{
+  &:before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background: url("/build/svg/message.svg") no-repeat;
+    margin-right: calculateRem(15px);
+  }
+}
+

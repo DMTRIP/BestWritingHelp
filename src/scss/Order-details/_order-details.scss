@@ -165,6 +165,21 @@ body{
         margin-bottom: calculateRem(95px);
       }
     }
+    .details-extend{
+      @include font-roboto-bold(22,#dd0000);
+      span{
+        border-bottom: 1px solid #e66666;
+      }
+      &:before{
+        content: '';
+        display: inline-block;
+        height: 19px;
+        width: 19px;
+        margin-left: calculateRem(22px);
+        margin-right: calculateRem(13px);
+        background: url("/build/svg/extend.svg") no-repeat;
+      }
+    }
   }
 }
 
